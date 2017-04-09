@@ -12,16 +12,7 @@ namespace Unity.TestSupport
 
         public void MethodA() { }
     }
-#if !DNXCORE50
-    public class WrappableThroughInterfaceWithAttributes : Interface
-    {
-        [GlobalCountCallHandler(HandlerName = "WrappableThroughInterfaceWithAttributes-Method")]
-        public void Method() { }
 
-        [GlobalCountCallHandler(HandlerName = "WrappableThroughInterfaceWithAttributes-Method3")]
-        public void Method3() { }
-    }
-#endif
     public interface Interface : InterfaceBase
     {
         void Method();

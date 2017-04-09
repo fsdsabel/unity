@@ -34,7 +34,7 @@ namespace Unity
         private event EventHandler<RegisterInstanceEventArgs> RegisteringInstance;
         private event EventHandler<ChildContainerCreatedEventArgs> ChildContainerCreated;
 
-        private IServiceProvider alternativeServiceProvider;
+        private IAlternativeServiceProvider alternativeServiceProvider;
 
         /// <summary>
         /// Create a default <see cref="UnityContainer"/>.
@@ -656,7 +656,7 @@ namespace Unity
         }
 
 
-        public IServiceProvider AlternativeServiceProvider
+        public IAlternativeServiceProvider AlternativeServiceProvider
         {
             get { return alternativeServiceProvider; }
             set { alternativeServiceProvider = value; }
