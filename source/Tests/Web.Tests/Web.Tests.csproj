@@ -3,13 +3,13 @@
   <PropertyGroup>
     <Description>Web.Tests Class Library for Unity.MVC</Description>
     <Authors>AgileSight</Authors>
-    <TargetFramework>dnxcore50</TargetFramework>
+    <TargetFramework>netstandard1.3</TargetFramework>
     <AssemblyName>Web.Tests</AssemblyName>
     <PackageId>Web.Tests</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Src\Unity-CoreClr\Unity-CoreClr.csproj" />
+    <ProjectReference Include="..\..\Src\Unity-CoreClr\Unity.Standard.csproj" />
     <ProjectReference Include="..\..\Src\Unity.Mvc6\Unity.Mvc6.csproj" />
   </ItemGroup>
 

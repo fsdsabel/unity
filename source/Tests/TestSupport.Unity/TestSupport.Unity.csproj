@@ -4,7 +4,7 @@
     <Description>Unity.TestSupport Class Library</Description>
     <VersionPrefix>1.0.0.0-beta</VersionPrefix>
     <Authors>AgileSight</Authors>
-    <TargetFramework>net46</TargetFramework>
+    <TargetFramework>netstandard1.3</TargetFramework>
     <AssemblyName>TestSupport.Unity</AssemblyName>
     <PackageId>TestSupport.Unity</PackageId>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
@@ -18,13 +18,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.ComponentModel" Version="4.3.0" />
+    <PackageReference Include="System.ComponentModel.TypeConverter" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
     <PackageReference Include="xunit.assert" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Microsoft.Practices.Unity">
-      <HintPath>..\..\Src\Unity-CoreClr\bin\Release\netstandard1.6\Microsoft.Practices.Unity.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\..\Src\Unity-CoreClr\Unity.Standard.csproj" />
   </ItemGroup>
 
 </Project>

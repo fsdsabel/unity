@@ -3,24 +3,23 @@
   <PropertyGroup>
     <Description>Unity.Mvc.Tests Class Library</Description>
     <Authors>pedro</Authors>
-    <TargetFramework>dnxcore50</TargetFramework>
+    <TargetFramework>netstandard1.4</TargetFramework>
     <AssemblyName>Unity.Mvc6.Tests</AssemblyName>
     <PackageId>Unity.Mvc6.Tests</PackageId>
   </PropertyGroup>
 
-  <ItemGroup Condition=" '$(TargetFramework)' == 'dnxcore50' ">
-    <ProjectReference Include="..\..\Src\Unity-CoreClr\Unity-CoreClr.csproj" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\Src\Unity-CoreClr\Unity.Standard.csproj" />
     <ProjectReference Include="..\..\Src\Unity.Mvc6\Unity.Mvc6.csproj" />
     <ProjectReference Include="..\TestSupport.Unity\TestSupport.Unity.csproj" />
-    <PackageReference Include="Microsoft.CSharp" Version="4.0.1" />
-    <PackageReference Include="System.Collections" Version="4.0.11" />
-    <PackageReference Include="System.Linq" Version="4.1.0" />
-    <PackageReference Include="System.Runtime" Version="4.1.0" />
-    <PackageReference Include="System.Threading" Version="4.0.11" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="1.0.2" />
-    <PackageReference Include="runtime.win7.System.Private.Uri" Version="4.0.1-beta-23516" />
-    <PackageReference Include="xunit.core" Version="2.1.0" />
-    <PackageReference Include="xunit.runner.dnx" Version="2.1.0-rc1-build204" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.3.0" />
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+    <PackageReference Include="System.Linq" Version="4.3.0" />
+    <PackageReference Include="System.Runtime" Version="4.3.0" />
+    <PackageReference Include="System.Threading" Version="4.3.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="1.1.0" />
+    <PackageReference Include="xunit" Version="2.2.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
   </ItemGroup>
 
 </Project>

@@ -25,7 +25,7 @@ namespace Unity.Mvc.Tests
             }
         }
 
-        [Fact]
+        /*[Fact]
         public void When_resolving_multiple_then_returns_all_registered_instances()
         {
             using (var container = new UnityContainer())
@@ -40,7 +40,7 @@ namespace Unity.Mvc.Tests
                 Assert.True(actual.Any(x => x.TestProperty == "value1"));
                 Assert.True(actual.Any(x => x.TestProperty == "value2"));
             }
-        }
+        }*/
 
         //[Fact]
         public void When_resolving_unregistered_type_then_returns_null()

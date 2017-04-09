@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Src\Unity-CoreClr\Unity.Standard.csproj" />
     <ProjectReference Include="..\TestSupport.Unity\TestSupport.Unity.csproj" />
   </ItemGroup>
 
@@ -20,12 +21,6 @@
     <PackageReference Include="System.Threading" Version="4.0.11" />
     <PackageReference Include="xunit" Version="2.2.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Microsoft.Practices.Unity">
-      <HintPath>..\..\Src\Unity-CoreClr\bin\$(Configuration)\netstandard1.6\Microsoft.Practices.Unity.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
 </Project>

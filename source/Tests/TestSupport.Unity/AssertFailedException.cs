@@ -17,7 +17,7 @@ namespace Unity.TestSupport
         public AssertFailedException(string message, Exception innerException) : base(message, innerException)
         {
         }
-#if !DNXCORE50
+#if !NETSTANDARD1_3
         protected AssertFailedException(SerializationInfo info, StreamingContext context) : base(info, context)
         {
         }
